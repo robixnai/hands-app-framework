@@ -1,0 +1,1524 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		465EA87EB74CF07589A49BEE /* Pods_HandsApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E068BF784391DCD03B76EDB /* Pods_HandsApp.framework */; };
+		50D713D6F7BB9092B4B1DB88 /* Pods_HandsAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF7E09EF964F8FFA0809C3AE /* Pods_HandsAppUITests.framework */; };
+		6261B6A70A04B7A08446544A /* Pods_HandsFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3BE5F3F717F91D4DD81C45A /* Pods_HandsFramework.framework */; };
+		6D02F0BF1FE4CDDE00AC663D /* UserDataDetailViewController+UserDataDataDetailProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D02F0BE1FE4CDDE00AC663D /* UserDataDetailViewController+UserDataDataDetailProviderProtocol.swift */; };
+		6D02F0C11FE4D2BB00AC663D /* LocationDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D02F0C01FE4D2BB00AC663D /* LocationDataProvider.swift */; };
+		6D02F0C31FE4D2FB00AC663D /* LocationDataProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D02F0C21FE4D2FB00AC663D /* LocationDataProviderProtocol.swift */; };
+		6D02F0C71FE5628A00AC663D /* MapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D02F0C61FE5628A00AC663D /* MapsViewController.swift */; };
+		6D0663791FE02F390009B8BC /* HandsFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D7A62981FDD8CE900D2AA96 /* HandsFramework.framework */; };
+		6D06637A1FE02F390009B8BC /* HandsFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6D7A62981FDD8CE900D2AA96 /* HandsFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6D59D2231FE1EFB7008118D8 /* AddressModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D59D2211FE1EFB7008118D8 /* AddressModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6D59D2241FE1EFB7008118D8 /* AddressModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D59D2221FE1EFB7008118D8 /* AddressModel.m */; };
+		6D59D2271FE1F159008118D8 /* LocationModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D59D2251FE1F159008118D8 /* LocationModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6D59D2281FE1F159008118D8 /* LocationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D59D2261FE1F159008118D8 /* LocationModel.m */; };
+		6D59D22C1FE1FEEA008118D8 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6D59D22B1FE1FEEA008118D8 /* Info.plist */; };
+		6D59D2331FE1FFF4008118D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D59D2321FE1FFF4008118D8 /* AppDelegate.swift */; };
+		6D59D23A1FE20064008118D8 /* HandsFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D59D2381FE20063008118D8 /* HandsFramework.h */; };
+		6D59D23B1FE20064008118D8 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6D59D2391FE20063008118D8 /* Info.plist */; };
+		6D59D2401FE20160008118D8 /* ErrorAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D59D23F1FE20160008118D8 /* ErrorAlert.swift */; };
+		6D59D2461FE2090E008118D8 /* DataProviderManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D59D2451FE2090E008118D8 /* DataProviderManager.swift */; };
+		6D59D24B1FE20A9B008118D8 /* UserDataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D59D24A1FE20A9B008118D8 /* UserDataViewModel.swift */; };
+		6D61DC121FE3180000E7A0D3 /* UserDataDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D61DC111FE3180000E7A0D3 /* UserDataDataProvider.swift */; };
+		6D61DC141FE31B9200E7A0D3 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D61DC131FE31B9200E7A0D3 /* Extensions.swift */; };
+		6D61DC181FE31E2900E7A0D3 /* UserDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D61DC161FE31E2900E7A0D3 /* UserDataViewController.swift */; };
+		6D61DC191FE31E2900E7A0D3 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D61DC171FE31E2900E7A0D3 /* BaseViewController.swift */; };
+		6D61DC1B1FE31E9200E7A0D3 /* UserDataViewController+UserDataDataProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D61DC1A1FE31E9200E7A0D3 /* UserDataViewController+UserDataDataProviderProtocol.swift */; };
+		6D61DC1F1FE3274700E7A0D3 /* UserDataCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D61DC1D1FE3274700E7A0D3 /* UserDataCollectionViewCell.swift */; };
+		6D61DC201FE3274700E7A0D3 /* UserDataCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D61DC1E1FE3274700E7A0D3 /* UserDataCollectionViewCell.xib */; };
+		6D61DC231FE34FEC00E7A0D3 /* UserDataViewController+UICollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D61DC221FE34FEC00E7A0D3 /* UserDataViewController+UICollectionViewDataSource.swift */; };
+		6D61DC251FE3501200E7A0D3 /* UserDataViewController+UICollectionViewDelegateFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D61DC241FE3501200E7A0D3 /* UserDataViewController+UICollectionViewDelegateFlowLayout.swift */; };
+		6D61DC271FE3642400E7A0D3 /* UserDataDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D61DC261FE3642400E7A0D3 /* UserDataDetailViewController.swift */; };
+		6D61DC291FE36C4E00E7A0D3 /* UserDataDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D61DC281FE36C4E00E7A0D3 /* UserDataDetailViewModel.swift */; };
+		6D61DC2C1FE3DCCE00E7A0D3 /* ErrorHandleableProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D61DC2B1FE3DCCE00E7A0D3 /* ErrorHandleableProtocol.swift */; };
+		6D61DC2E1FE3DD9100E7A0D3 /* UserDataDataProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D61DC2D1FE3DD9100E7A0D3 /* UserDataDataProviderProtocol.swift */; };
+		6D61DC301FE3DDFA00E7A0D3 /* GenericDataProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D61DC2F1FE3DDFA00E7A0D3 /* GenericDataProviderProtocol.swift */; };
+		6D7A626D1FDD8CAA00D2AA96 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D7A626B1FDD8CAA00D2AA96 /* Main.storyboard */; };
+		6D7A626F1FDD8CAA00D2AA96 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D7A626E1FDD8CAA00D2AA96 /* Assets.xcassets */; };
+		6D7A62721FDD8CAA00D2AA96 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D7A62701FDD8CAA00D2AA96 /* LaunchScreen.storyboard */; };
+		6D7A627D1FDD8CAA00D2AA96 /* HandsAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D7A627C1FDD8CAA00D2AA96 /* HandsAppTests.swift */; };
+		6D7A62881FDD8CAA00D2AA96 /* HandsAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D7A62871FDD8CAA00D2AA96 /* HandsAppUITests.swift */; };
+		6D7A62A11FDD8CE900D2AA96 /* HandsFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D7A62981FDD8CE900D2AA96 /* HandsFramework.framework */; };
+		6D7A62A81FDD8CE900D2AA96 /* HandsFrameworkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D7A62A71FDD8CE900D2AA96 /* HandsFrameworkTests.m */; };
+		6D995A4A1FE097C400BAFE81 /* AddressRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D995A481FE097C400BAFE81 /* AddressRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6D995A4B1FE097C400BAFE81 /* AddressRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D995A491FE097C400BAFE81 /* AddressRequest.m */; };
+		6D995A4E1FE097E400BAFE81 /* UserDataRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D995A4C1FE097E400BAFE81 /* UserDataRequest.m */; };
+		6D995A4F1FE097E400BAFE81 /* UserDataRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D995A4D1FE097E400BAFE81 /* UserDataRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6D995A561FE09B8000BAFE81 /* AddressComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D995A541FE09B8000BAFE81 /* AddressComponent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6D995A571FE09B8000BAFE81 /* AddressComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D995A551FE09B8000BAFE81 /* AddressComponent.m */; };
+		6D995A5A1FE0A64900BAFE81 /* Address.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D995A581FE0A64900BAFE81 /* Address.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6D995A5B1FE0A64900BAFE81 /* Address.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D995A591FE0A64900BAFE81 /* Address.m */; };
+		6DDF7B911FE1DA210089D1A5 /* Result.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DDF7B8F1FE1DA210089D1A5 /* Result.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6DDF7B921FE1DA210089D1A5 /* Result.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DDF7B901FE1DA210089D1A5 /* Result.m */; };
+		6DDF7B9B1FE1E6390089D1A5 /* UserDataModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DDF7B991FE1E6390089D1A5 /* UserDataModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6DDF7B9C1FE1E6390089D1A5 /* UserDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DDF7B9A1FE1E6390089D1A5 /* UserDataModel.m */; };
+		6DE678DC1FDF38EC00A0C421 /* Client.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DE678DA1FDF38EC00A0C421 /* Client.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6DE678DD1FDF38EC00A0C421 /* Client.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DE678DB1FDF38EC00A0C421 /* Client.m */; };
+		6DE678E41FDFEE4600A0C421 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DE678E31FDFEE4600A0C421 /* CoreLocation.framework */; };
+		6DE678E71FDFEEDD00A0C421 /* LocationManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DE678E51FDFEEDD00A0C421 /* LocationManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6DE678E81FDFEEDD00A0C421 /* LocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DE678E61FDFEEDD00A0C421 /* LocationManager.m */; };
+		6DED8A7A1FDD990400BA7636 /* UserData.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DED8A781FDD990400BA7636 /* UserData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6DED8A7B1FDD990400BA7636 /* UserData.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DED8A791FDD990400BA7636 /* UserData.m */; };
+		76BE73C09976221814B0FBCC /* Pods_HandsFrameworkTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1947E536838F28B78D27BFD /* Pods_HandsFrameworkTests.framework */; };
+		81D203520B674C004337D60A /* Pods_HandsAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7363D7E7125022A1F8C52490 /* Pods_HandsAppTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6D06637B1FE02F3A0009B8BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6D7A62441FDD8C4E00D2AA96 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6D7A62971FDD8CE900D2AA96;
+			remoteInfo = HandsFramework;
+		};
+		6D7A62791FDD8CAA00D2AA96 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6D7A62441FDD8C4E00D2AA96 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6D7A62641FDD8CAA00D2AA96;
+			remoteInfo = HandsApp;
+		};
+		6D7A62841FDD8CAA00D2AA96 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6D7A62441FDD8C4E00D2AA96 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6D7A62641FDD8CAA00D2AA96;
+			remoteInfo = HandsApp;
+		};
+		6D7A62A21FDD8CE900D2AA96 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6D7A62441FDD8C4E00D2AA96 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6D7A62971FDD8CE900D2AA96;
+			remoteInfo = HandsFramework;
+		};
+		6D7A62A41FDD8CE900D2AA96 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6D7A62441FDD8C4E00D2AA96 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6D7A62641FDD8CAA00D2AA96;
+			remoteInfo = HandsApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6D06637D1FE02F3A0009B8BC /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				6D06637A1FE02F390009B8BC /* HandsFramework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		06B4631CF51AE9CAD8F74A63 /* Pods-HandsFrameworkTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HandsFrameworkTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HandsFrameworkTests/Pods-HandsFrameworkTests.release.xcconfig"; sourceTree = "<group>"; };
+		44303D2598F935465585BDF1 /* Pods-HandsFrameworkTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HandsFrameworkTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HandsFrameworkTests/Pods-HandsFrameworkTests.debug.xcconfig"; sourceTree = "<group>"; };
+		57870C591137989FC693B2A4 /* Pods-HandsFramework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HandsFramework.release.xcconfig"; path = "Pods/Target Support Files/Pods-HandsFramework/Pods-HandsFramework.release.xcconfig"; sourceTree = "<group>"; };
+		5BE6292E08847F77A0C4A583 /* Pods-HandsFramework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HandsFramework.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HandsFramework/Pods-HandsFramework.debug.xcconfig"; sourceTree = "<group>"; };
+		6D02F0BE1FE4CDDE00AC663D /* UserDataDetailViewController+UserDataDataDetailProviderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDataDetailViewController+UserDataDataDetailProviderProtocol.swift"; sourceTree = "<group>"; };
+		6D02F0C01FE4D2BB00AC663D /* LocationDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDataProvider.swift; sourceTree = "<group>"; };
+		6D02F0C21FE4D2FB00AC663D /* LocationDataProviderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDataProviderProtocol.swift; sourceTree = "<group>"; };
+		6D02F0C61FE5628A00AC663D /* MapsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MapsViewController.swift; path = ViewControllers/MapsViewController.swift; sourceTree = "<group>"; };
+		6D0663781FE010290009B8BC /* AFNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AFNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D3DEA73ECE494F216B37FDA /* Pods-HandsAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HandsAppTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HandsAppTests/Pods-HandsAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6D59D2211FE1EFB7008118D8 /* AddressModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AddressModel.h; path = Models/AddressModel.h; sourceTree = "<group>"; };
+		6D59D2221FE1EFB7008118D8 /* AddressModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AddressModel.m; path = Models/AddressModel.m; sourceTree = "<group>"; };
+		6D59D2251FE1F159008118D8 /* LocationModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LocationModel.h; path = Models/LocationModel.h; sourceTree = "<group>"; };
+		6D59D2261FE1F159008118D8 /* LocationModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = LocationModel.m; path = Models/LocationModel.m; sourceTree = "<group>"; };
+		6D59D22B1FE1FEEA008118D8 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = SupportFiles/Info.plist; sourceTree = "<group>"; };
+		6D59D2301FE1FFC6008118D8 /* HandsApp-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "HandsApp-Bridging-Header.h"; path = "SupportFiles/HandsApp-Bridging-Header.h"; sourceTree = "<group>"; };
+		6D59D2321FE1FFF4008118D8 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Delegates/AppDelegate.swift; sourceTree = "<group>"; };
+		6D59D2381FE20063008118D8 /* HandsFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HandsFramework.h; sourceTree = "<group>"; };
+		6D59D2391FE20063008118D8 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6D59D23F1FE20160008118D8 /* ErrorAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ErrorAlert.swift; path = Helpers/ErrorAlert.swift; sourceTree = "<group>"; };
+		6D59D2451FE2090E008118D8 /* DataProviderManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProviderManager.swift; sourceTree = "<group>"; };
+		6D59D24A1FE20A9B008118D8 /* UserDataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserDataViewModel.swift; path = ViewModels/UserDataViewModel.swift; sourceTree = "<group>"; };
+		6D61DC111FE3180000E7A0D3 /* UserDataDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataDataProvider.swift; sourceTree = "<group>"; };
+		6D61DC131FE31B9200E7A0D3 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		6D61DC161FE31E2900E7A0D3 /* UserDataViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserDataViewController.swift; path = ViewControllers/UserDataViewController.swift; sourceTree = "<group>"; };
+		6D61DC171FE31E2900E7A0D3 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseViewController.swift; path = ViewControllers/BaseViewController.swift; sourceTree = "<group>"; };
+		6D61DC1A1FE31E9200E7A0D3 /* UserDataViewController+UserDataDataProviderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDataViewController+UserDataDataProviderProtocol.swift"; sourceTree = "<group>"; };
+		6D61DC1D1FE3274700E7A0D3 /* UserDataCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataCollectionViewCell.swift; sourceTree = "<group>"; };
+		6D61DC1E1FE3274700E7A0D3 /* UserDataCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserDataCollectionViewCell.xib; sourceTree = "<group>"; };
+		6D61DC221FE34FEC00E7A0D3 /* UserDataViewController+UICollectionViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDataViewController+UICollectionViewDataSource.swift"; sourceTree = "<group>"; };
+		6D61DC241FE3501200E7A0D3 /* UserDataViewController+UICollectionViewDelegateFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDataViewController+UICollectionViewDelegateFlowLayout.swift"; sourceTree = "<group>"; };
+		6D61DC261FE3642400E7A0D3 /* UserDataDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserDataDetailViewController.swift; path = ViewControllers/UserDataDetailViewController.swift; sourceTree = "<group>"; };
+		6D61DC281FE36C4E00E7A0D3 /* UserDataDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserDataDetailViewModel.swift; path = ViewModels/UserDataDetailViewModel.swift; sourceTree = "<group>"; };
+		6D61DC2B1FE3DCCE00E7A0D3 /* ErrorHandleableProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandleableProtocol.swift; sourceTree = "<group>"; };
+		6D61DC2D1FE3DD9100E7A0D3 /* UserDataDataProviderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataDataProviderProtocol.swift; sourceTree = "<group>"; };
+		6D61DC2F1FE3DDFA00E7A0D3 /* GenericDataProviderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericDataProviderProtocol.swift; sourceTree = "<group>"; };
+		6D7A62651FDD8CAA00D2AA96 /* HandsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HandsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D7A626C1FDD8CAA00D2AA96 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6D7A626E1FDD8CAA00D2AA96 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6D7A62711FDD8CAA00D2AA96 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6D7A62781FDD8CAA00D2AA96 /* HandsAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HandsAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D7A627C1FDD8CAA00D2AA96 /* HandsAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandsAppTests.swift; sourceTree = "<group>"; };
+		6D7A627E1FDD8CAA00D2AA96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6D7A62831FDD8CAA00D2AA96 /* HandsAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HandsAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D7A62871FDD8CAA00D2AA96 /* HandsAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandsAppUITests.swift; sourceTree = "<group>"; };
+		6D7A62891FDD8CAA00D2AA96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6D7A62981FDD8CE900D2AA96 /* HandsFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HandsFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D7A62A01FDD8CE900D2AA96 /* HandsFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HandsFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D7A62A71FDD8CE900D2AA96 /* HandsFrameworkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HandsFrameworkTests.m; sourceTree = "<group>"; };
+		6D7A62A91FDD8CE900D2AA96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6D995A481FE097C400BAFE81 /* AddressRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AddressRequest.h; path = Network/Request/AddressRequest.h; sourceTree = "<group>"; };
+		6D995A491FE097C400BAFE81 /* AddressRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AddressRequest.m; path = Network/Request/AddressRequest.m; sourceTree = "<group>"; };
+		6D995A4C1FE097E400BAFE81 /* UserDataRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UserDataRequest.m; path = Network/Request/UserDataRequest.m; sourceTree = "<group>"; };
+		6D995A4D1FE097E400BAFE81 /* UserDataRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UserDataRequest.h; path = Network/Request/UserDataRequest.h; sourceTree = "<group>"; };
+		6D995A541FE09B8000BAFE81 /* AddressComponent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddressComponent.h; sourceTree = "<group>"; };
+		6D995A551FE09B8000BAFE81 /* AddressComponent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddressComponent.m; sourceTree = "<group>"; };
+		6D995A581FE0A64900BAFE81 /* Address.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Address.h; sourceTree = "<group>"; };
+		6D995A591FE0A64900BAFE81 /* Address.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Address.m; sourceTree = "<group>"; };
+		6DDF7B8F1FE1DA210089D1A5 /* Result.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Result.h; sourceTree = "<group>"; };
+		6DDF7B901FE1DA210089D1A5 /* Result.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Result.m; sourceTree = "<group>"; };
+		6DDF7B991FE1E6390089D1A5 /* UserDataModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = UserDataModel.h; path = Models/UserDataModel.h; sourceTree = "<group>"; };
+		6DDF7B9A1FE1E6390089D1A5 /* UserDataModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = UserDataModel.m; path = Models/UserDataModel.m; sourceTree = "<group>"; };
+		6DE678DA1FDF38EC00A0C421 /* Client.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Client.h; sourceTree = "<group>"; };
+		6DE678DB1FDF38EC00A0C421 /* Client.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Client.m; sourceTree = "<group>"; };
+		6DE678E31FDFEE4600A0C421 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		6DE678E51FDFEEDD00A0C421 /* LocationManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LocationManager.h; path = Services/LocationManager.h; sourceTree = "<group>"; };
+		6DE678E61FDFEEDD00A0C421 /* LocationManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = LocationManager.m; path = Services/LocationManager.m; sourceTree = "<group>"; };
+		6DED8A781FDD990400BA7636 /* UserData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserData.h; sourceTree = "<group>"; };
+		6DED8A791FDD990400BA7636 /* UserData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserData.m; sourceTree = "<group>"; };
+		6E068BF784391DCD03B76EDB /* Pods_HandsApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HandsApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7363D7E7125022A1F8C52490 /* Pods_HandsAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HandsAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1947E536838F28B78D27BFD /* Pods_HandsFrameworkTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HandsFrameworkTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1B36277093611F6D1F3497C /* Pods-HandsApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HandsApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-HandsApp/Pods-HandsApp.release.xcconfig"; sourceTree = "<group>"; };
+		B2465D24EC896B2AA560F694 /* Pods-HandsAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HandsAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HandsAppTests/Pods-HandsAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		C64F11A6112A627C1E4BD1E2 /* Pods-HandsAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HandsAppUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HandsAppUITests/Pods-HandsAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C7E1B6A8C81947B42A3CC452 /* Pods-HandsAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HandsAppUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HandsAppUITests/Pods-HandsAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D3BE5F3F717F91D4DD81C45A /* Pods_HandsFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HandsFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6625440496D4A95543246B0 /* Pods-HandsApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HandsApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HandsApp/Pods-HandsApp.debug.xcconfig"; sourceTree = "<group>"; };
+		FF7E09EF964F8FFA0809C3AE /* Pods_HandsAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HandsAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6D7A62621FDD8CAA00D2AA96 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D0663791FE02F390009B8BC /* HandsFramework.framework in Frameworks */,
+				465EA87EB74CF07589A49BEE /* Pods_HandsApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D7A62751FDD8CAA00D2AA96 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81D203520B674C004337D60A /* Pods_HandsAppTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D7A62801FDD8CAA00D2AA96 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50D713D6F7BB9092B4B1DB88 /* Pods_HandsAppUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D7A62941FDD8CE900D2AA96 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DE678E41FDFEE4600A0C421 /* CoreLocation.framework in Frameworks */,
+				6261B6A70A04B7A08446544A /* Pods_HandsFramework.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D7A629D1FDD8CE900D2AA96 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D7A62A11FDD8CE900D2AA96 /* HandsFramework.framework in Frameworks */,
+				76BE73C09976221814B0FBCC /* Pods_HandsFrameworkTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		69D4ED66F0A256322F7C21EE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D6625440496D4A95543246B0 /* Pods-HandsApp.debug.xcconfig */,
+				B1B36277093611F6D1F3497C /* Pods-HandsApp.release.xcconfig */,
+				6D3DEA73ECE494F216B37FDA /* Pods-HandsAppTests.debug.xcconfig */,
+				B2465D24EC896B2AA560F694 /* Pods-HandsAppTests.release.xcconfig */,
+				C7E1B6A8C81947B42A3CC452 /* Pods-HandsAppUITests.debug.xcconfig */,
+				C64F11A6112A627C1E4BD1E2 /* Pods-HandsAppUITests.release.xcconfig */,
+				5BE6292E08847F77A0C4A583 /* Pods-HandsFramework.debug.xcconfig */,
+				57870C591137989FC693B2A4 /* Pods-HandsFramework.release.xcconfig */,
+				44303D2598F935465585BDF1 /* Pods-HandsFrameworkTests.debug.xcconfig */,
+				06B4631CF51AE9CAD8F74A63 /* Pods-HandsFrameworkTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6D59D22A1FE1FE97008118D8 /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				6D59D2301FE1FFC6008118D8 /* HandsApp-Bridging-Header.h */,
+				6D59D22B1FE1FEEA008118D8 /* Info.plist */,
+			);
+			name = SupportFiles;
+			sourceTree = "<group>";
+		};
+		6D59D22D1FE1FEF5008118D8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6D59D22F1FE1FF8F008118D8 /* Assets */,
+				6D59D22E1FE1FF0A008118D8 /* Storyboard */,
+				6D61DC211FE3274E00E7A0D3 /* Xibs */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		6D59D22E1FE1FF0A008118D8 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				6D7A62701FDD8CAA00D2AA96 /* LaunchScreen.storyboard */,
+				6D7A626B1FDD8CAA00D2AA96 /* Main.storyboard */,
+			);
+			name = Storyboard;
+			sourceTree = "<group>";
+		};
+		6D59D22F1FE1FF8F008118D8 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				6D7A626E1FDD8CAA00D2AA96 /* Assets.xcassets */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		6D59D2311FE1FFCF008118D8 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				6D59D2321FE1FFF4008118D8 /* AppDelegate.swift */,
+			);
+			name = Delegates;
+			sourceTree = "<group>";
+		};
+		6D59D2341FE1FFFB008118D8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				6D61DC131FE31B9200E7A0D3 /* Extensions.swift */,
+				6D61DC1A1FE31E9200E7A0D3 /* UserDataViewController+UserDataDataProviderProtocol.swift */,
+				6D61DC221FE34FEC00E7A0D3 /* UserDataViewController+UICollectionViewDataSource.swift */,
+				6D61DC241FE3501200E7A0D3 /* UserDataViewController+UICollectionViewDelegateFlowLayout.swift */,
+				6D02F0BE1FE4CDDE00AC663D /* UserDataDetailViewController+UserDataDataDetailProviderProtocol.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		6D59D2371FE20040008118D8 /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				6D59D2381FE20063008118D8 /* HandsFramework.h */,
+				6D59D2391FE20063008118D8 /* Info.plist */,
+			);
+			path = SupportFiles;
+			sourceTree = "<group>";
+		};
+		6D59D23E1FE20133008118D8 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				6D59D23F1FE20160008118D8 /* ErrorAlert.swift */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		6D59D2441FE2054C008118D8 /* DataProviders */ = {
+			isa = PBXGroup;
+			children = (
+				6D59D2451FE2090E008118D8 /* DataProviderManager.swift */,
+				6D61DC111FE3180000E7A0D3 /* UserDataDataProvider.swift */,
+				6D02F0C01FE4D2BB00AC663D /* LocationDataProvider.swift */,
+			);
+			path = DataProviders;
+			sourceTree = "<group>";
+		};
+		6D59D2471FE209DD008118D8 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				6D59D24A1FE20A9B008118D8 /* UserDataViewModel.swift */,
+				6D61DC281FE36C4E00E7A0D3 /* UserDataDetailViewModel.swift */,
+			);
+			name = ViewModels;
+			sourceTree = "<group>";
+		};
+		6D61DC151FE31D9900E7A0D3 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				6D61DC171FE31E2900E7A0D3 /* BaseViewController.swift */,
+				6D61DC161FE31E2900E7A0D3 /* UserDataViewController.swift */,
+				6D61DC261FE3642400E7A0D3 /* UserDataDetailViewController.swift */,
+				6D02F0C61FE5628A00AC663D /* MapsViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		6D61DC1C1FE326FF00E7A0D3 /* ViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				6D61DC1D1FE3274700E7A0D3 /* UserDataCollectionViewCell.swift */,
+			);
+			path = ViewCells;
+			sourceTree = "<group>";
+		};
+		6D61DC211FE3274E00E7A0D3 /* Xibs */ = {
+			isa = PBXGroup;
+			children = (
+				6D61DC1E1FE3274700E7A0D3 /* UserDataCollectionViewCell.xib */,
+			);
+			path = Xibs;
+			sourceTree = "<group>";
+		};
+		6D61DC2A1FE3DCA900E7A0D3 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				6D61DC2B1FE3DCCE00E7A0D3 /* ErrorHandleableProtocol.swift */,
+				6D61DC2F1FE3DDFA00E7A0D3 /* GenericDataProviderProtocol.swift */,
+				6D61DC2D1FE3DD9100E7A0D3 /* UserDataDataProviderProtocol.swift */,
+				6D02F0C21FE4D2FB00AC663D /* LocationDataProviderProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		6D7A62431FDD8C4E00D2AA96 = {
+			isa = PBXGroup;
+			children = (
+				6D7A62661FDD8CAA00D2AA96 /* HandsApp */,
+				6D7A62991FDD8CE900D2AA96 /* HandsFramework */,
+				6D7A627B1FDD8CAA00D2AA96 /* HandsAppTests */,
+				6D7A62861FDD8CAA00D2AA96 /* HandsAppUITests */,
+				6D7A62A61FDD8CE900D2AA96 /* HandsFrameworkTests */,
+				6D7A624D1FDD8C4E00D2AA96 /* Products */,
+				69D4ED66F0A256322F7C21EE /* Pods */,
+				D6901715AD34C1F652785989 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6D7A624D1FDD8C4E00D2AA96 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6D7A62651FDD8CAA00D2AA96 /* HandsApp.app */,
+				6D7A62781FDD8CAA00D2AA96 /* HandsAppTests.xctest */,
+				6D7A62831FDD8CAA00D2AA96 /* HandsAppUITests.xctest */,
+				6D7A62981FDD8CE900D2AA96 /* HandsFramework.framework */,
+				6D7A62A01FDD8CE900D2AA96 /* HandsFrameworkTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6D7A62661FDD8CAA00D2AA96 /* HandsApp */ = {
+			isa = PBXGroup;
+			children = (
+				6D61DC2A1FE3DCA900E7A0D3 /* Protocols */,
+				6D59D2441FE2054C008118D8 /* DataProviders */,
+				6D59D2311FE1FFCF008118D8 /* Delegates */,
+				6D59D2341FE1FFFB008118D8 /* Extensions */,
+				6D59D23E1FE20133008118D8 /* Helpers */,
+				6D61DC151FE31D9900E7A0D3 /* ViewControllers */,
+				6D59D2471FE209DD008118D8 /* ViewModels */,
+				6D61DC1C1FE326FF00E7A0D3 /* ViewCells */,
+				6D59D22D1FE1FEF5008118D8 /* Resources */,
+				6D59D22A1FE1FE97008118D8 /* SupportFiles */,
+			);
+			path = HandsApp;
+			sourceTree = "<group>";
+		};
+		6D7A627B1FDD8CAA00D2AA96 /* HandsAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				6D7A627C1FDD8CAA00D2AA96 /* HandsAppTests.swift */,
+				6D7A627E1FDD8CAA00D2AA96 /* Info.plist */,
+			);
+			path = HandsAppTests;
+			sourceTree = "<group>";
+		};
+		6D7A62861FDD8CAA00D2AA96 /* HandsAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6D7A62871FDD8CAA00D2AA96 /* HandsAppUITests.swift */,
+				6D7A62891FDD8CAA00D2AA96 /* Info.plist */,
+			);
+			path = HandsAppUITests;
+			sourceTree = "<group>";
+		};
+		6D7A62991FDD8CE900D2AA96 /* HandsFramework */ = {
+			isa = PBXGroup;
+			children = (
+				6DDF7B971FE1E6070089D1A5 /* Models */,
+				6D7A62B61FDD8D7B00D2AA96 /* Network */,
+				6DED8A771FDD98E500BA7636 /* Objects */,
+				6DE678E21FDFEBAF00A0C421 /* Services */,
+				6D59D2371FE20040008118D8 /* SupportFiles */,
+			);
+			path = HandsFramework;
+			sourceTree = "<group>";
+		};
+		6D7A62A61FDD8CE900D2AA96 /* HandsFrameworkTests */ = {
+			isa = PBXGroup;
+			children = (
+				6D7A62A71FDD8CE900D2AA96 /* HandsFrameworkTests.m */,
+				6D7A62A91FDD8CE900D2AA96 /* Info.plist */,
+			);
+			path = HandsFrameworkTests;
+			sourceTree = "<group>";
+		};
+		6D7A62B61FDD8D7B00D2AA96 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				6DE678DE1FDF3A4700A0C421 /* API */,
+				6DE678E01FDF4D4000A0C421 /* Requests */,
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
+		6DDF7B971FE1E6070089D1A5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6D59D2211FE1EFB7008118D8 /* AddressModel.h */,
+				6D59D2221FE1EFB7008118D8 /* AddressModel.m */,
+				6D59D2251FE1F159008118D8 /* LocationModel.h */,
+				6D59D2261FE1F159008118D8 /* LocationModel.m */,
+				6DDF7B991FE1E6390089D1A5 /* UserDataModel.h */,
+				6DDF7B9A1FE1E6390089D1A5 /* UserDataModel.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		6DE678DE1FDF3A4700A0C421 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				6DE678DA1FDF38EC00A0C421 /* Client.h */,
+				6DE678DB1FDF38EC00A0C421 /* Client.m */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		6DE678E01FDF4D4000A0C421 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				6D995A481FE097C400BAFE81 /* AddressRequest.h */,
+				6D995A491FE097C400BAFE81 /* AddressRequest.m */,
+				6D995A4D1FE097E400BAFE81 /* UserDataRequest.h */,
+				6D995A4C1FE097E400BAFE81 /* UserDataRequest.m */,
+			);
+			name = Requests;
+			sourceTree = "<group>";
+		};
+		6DE678E21FDFEBAF00A0C421 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				6DE678E51FDFEEDD00A0C421 /* LocationManager.h */,
+				6DE678E61FDFEEDD00A0C421 /* LocationManager.m */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		6DED8A771FDD98E500BA7636 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				6D995A581FE0A64900BAFE81 /* Address.h */,
+				6D995A591FE0A64900BAFE81 /* Address.m */,
+				6D995A541FE09B8000BAFE81 /* AddressComponent.h */,
+				6D995A551FE09B8000BAFE81 /* AddressComponent.m */,
+				6DDF7B8F1FE1DA210089D1A5 /* Result.h */,
+				6DDF7B901FE1DA210089D1A5 /* Result.m */,
+				6DED8A781FDD990400BA7636 /* UserData.h */,
+				6DED8A791FDD990400BA7636 /* UserData.m */,
+			);
+			path = Objects;
+			sourceTree = "<group>";
+		};
+		D6901715AD34C1F652785989 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6D0663781FE010290009B8BC /* AFNetworking.framework */,
+				6DE678E31FDFEE4600A0C421 /* CoreLocation.framework */,
+				6E068BF784391DCD03B76EDB /* Pods_HandsApp.framework */,
+				7363D7E7125022A1F8C52490 /* Pods_HandsAppTests.framework */,
+				FF7E09EF964F8FFA0809C3AE /* Pods_HandsAppUITests.framework */,
+				D3BE5F3F717F91D4DD81C45A /* Pods_HandsFramework.framework */,
+				A1947E536838F28B78D27BFD /* Pods_HandsFrameworkTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		6D7A62951FDD8CE900D2AA96 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D995A4A1FE097C400BAFE81 /* AddressRequest.h in Headers */,
+				6D995A4F1FE097E400BAFE81 /* UserDataRequest.h in Headers */,
+				6DE678E71FDFEEDD00A0C421 /* LocationManager.h in Headers */,
+				6D995A5A1FE0A64900BAFE81 /* Address.h in Headers */,
+				6DED8A7A1FDD990400BA7636 /* UserData.h in Headers */,
+				6D995A561FE09B8000BAFE81 /* AddressComponent.h in Headers */,
+				6D59D23A1FE20064008118D8 /* HandsFramework.h in Headers */,
+				6DDF7B911FE1DA210089D1A5 /* Result.h in Headers */,
+				6DDF7B9B1FE1E6390089D1A5 /* UserDataModel.h in Headers */,
+				6D59D2231FE1EFB7008118D8 /* AddressModel.h in Headers */,
+				6D59D2271FE1F159008118D8 /* LocationModel.h in Headers */,
+				6DE678DC1FDF38EC00A0C421 /* Client.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		6D7A62641FDD8CAA00D2AA96 /* HandsApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6D7A628A1FDD8CAA00D2AA96 /* Build configuration list for PBXNativeTarget "HandsApp" */;
+			buildPhases = (
+				249F8308BB90D099ED54907B /* [CP] Check Pods Manifest.lock */,
+				6D7A62611FDD8CAA00D2AA96 /* Sources */,
+				6D7A62621FDD8CAA00D2AA96 /* Frameworks */,
+				6D7A62631FDD8CAA00D2AA96 /* Resources */,
+				47767C01D45015A0336643E6 /* [CP] Embed Pods Frameworks */,
+				2A04C3EC1E46988C5AEF4D43 /* [CP] Copy Pods Resources */,
+				6D06637D1FE02F3A0009B8BC /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6D06637C1FE02F3A0009B8BC /* PBXTargetDependency */,
+			);
+			name = HandsApp;
+			productName = HandsApp;
+			productReference = 6D7A62651FDD8CAA00D2AA96 /* HandsApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6D7A62771FDD8CAA00D2AA96 /* HandsAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6D7A628D1FDD8CAA00D2AA96 /* Build configuration list for PBXNativeTarget "HandsAppTests" */;
+			buildPhases = (
+				969D3517377305CE799DBF91 /* [CP] Check Pods Manifest.lock */,
+				6D7A62741FDD8CAA00D2AA96 /* Sources */,
+				6D7A62751FDD8CAA00D2AA96 /* Frameworks */,
+				6D7A62761FDD8CAA00D2AA96 /* Resources */,
+				43D8204A8A8BB3F77D250C83 /* [CP] Embed Pods Frameworks */,
+				5839F67177BEB9B09329364F /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6D7A627A1FDD8CAA00D2AA96 /* PBXTargetDependency */,
+			);
+			name = HandsAppTests;
+			productName = HandsAppTests;
+			productReference = 6D7A62781FDD8CAA00D2AA96 /* HandsAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6D7A62821FDD8CAA00D2AA96 /* HandsAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6D7A62901FDD8CAA00D2AA96 /* Build configuration list for PBXNativeTarget "HandsAppUITests" */;
+			buildPhases = (
+				96123A4DE9636C5766084B01 /* [CP] Check Pods Manifest.lock */,
+				6D7A627F1FDD8CAA00D2AA96 /* Sources */,
+				6D7A62801FDD8CAA00D2AA96 /* Frameworks */,
+				6D7A62811FDD8CAA00D2AA96 /* Resources */,
+				2AAAC4B3494C6C92C261616C /* [CP] Embed Pods Frameworks */,
+				DCE892004315EEE1182C2A2E /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6D7A62851FDD8CAA00D2AA96 /* PBXTargetDependency */,
+			);
+			name = HandsAppUITests;
+			productName = HandsAppUITests;
+			productReference = 6D7A62831FDD8CAA00D2AA96 /* HandsAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		6D7A62971FDD8CE900D2AA96 /* HandsFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6D7A62AF1FDD8CE900D2AA96 /* Build configuration list for PBXNativeTarget "HandsFramework" */;
+			buildPhases = (
+				B0C027F398493B4EB5D5DA86 /* [CP] Check Pods Manifest.lock */,
+				6D7A62931FDD8CE900D2AA96 /* Sources */,
+				6D7A62941FDD8CE900D2AA96 /* Frameworks */,
+				6D7A62951FDD8CE900D2AA96 /* Headers */,
+				6D7A62961FDD8CE900D2AA96 /* Resources */,
+				D3CD3B33F042254D09A29A12 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HandsFramework;
+			productName = HandsFramework;
+			productReference = 6D7A62981FDD8CE900D2AA96 /* HandsFramework.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6D7A629F1FDD8CE900D2AA96 /* HandsFrameworkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6D7A62B31FDD8CE900D2AA96 /* Build configuration list for PBXNativeTarget "HandsFrameworkTests" */;
+			buildPhases = (
+				0732A26CC04CAEF98FF1AE5E /* [CP] Check Pods Manifest.lock */,
+				6D7A629C1FDD8CE900D2AA96 /* Sources */,
+				6D7A629D1FDD8CE900D2AA96 /* Frameworks */,
+				6D7A629E1FDD8CE900D2AA96 /* Resources */,
+				83E4345D8777B2D642EB184E /* [CP] Embed Pods Frameworks */,
+				1EC4EDD6278DB039F723CC4D /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6D7A62A31FDD8CE900D2AA96 /* PBXTargetDependency */,
+				6D7A62A51FDD8CE900D2AA96 /* PBXTargetDependency */,
+			);
+			name = HandsFrameworkTests;
+			productName = HandsFrameworkTests;
+			productReference = 6D7A62A01FDD8CE900D2AA96 /* HandsFrameworkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6D7A62441FDD8C4E00D2AA96 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = "Robson Moreira";
+				TargetAttributes = {
+					6D7A62641FDD8CAA00D2AA96 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					6D7A62771FDD8CAA00D2AA96 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 6D7A62641FDD8CAA00D2AA96;
+					};
+					6D7A62821FDD8CAA00D2AA96 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 6D7A62641FDD8CAA00D2AA96;
+					};
+					6D7A62971FDD8CE900D2AA96 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					6D7A629F1FDD8CE900D2AA96 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 6D7A62641FDD8CAA00D2AA96;
+					};
+				};
+			};
+			buildConfigurationList = 6D7A62471FDD8C4E00D2AA96 /* Build configuration list for PBXProject "HandsAppFramework" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6D7A62431FDD8C4E00D2AA96;
+			productRefGroup = 6D7A624D1FDD8C4E00D2AA96 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6D7A62641FDD8CAA00D2AA96 /* HandsApp */,
+				6D7A62771FDD8CAA00D2AA96 /* HandsAppTests */,
+				6D7A62821FDD8CAA00D2AA96 /* HandsAppUITests */,
+				6D7A62971FDD8CE900D2AA96 /* HandsFramework */,
+				6D7A629F1FDD8CE900D2AA96 /* HandsFrameworkTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6D7A62631FDD8CAA00D2AA96 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D59D22C1FE1FEEA008118D8 /* Info.plist in Resources */,
+				6D61DC201FE3274700E7A0D3 /* UserDataCollectionViewCell.xib in Resources */,
+				6D7A62721FDD8CAA00D2AA96 /* LaunchScreen.storyboard in Resources */,
+				6D7A626F1FDD8CAA00D2AA96 /* Assets.xcassets in Resources */,
+				6D7A626D1FDD8CAA00D2AA96 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D7A62761FDD8CAA00D2AA96 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D7A62811FDD8CAA00D2AA96 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D7A62961FDD8CE900D2AA96 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D59D23B1FE20064008118D8 /* Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D7A629E1FDD8CE900D2AA96 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0732A26CC04CAEF98FF1AE5E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HandsFrameworkTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1EC4EDD6278DB039F723CC4D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HandsFrameworkTests/Pods-HandsFrameworkTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		249F8308BB90D099ED54907B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HandsApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2A04C3EC1E46988C5AEF4D43 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HandsApp/Pods-HandsApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2AAAC4B3494C6C92C261616C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HandsAppUITests/Pods-HandsAppUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		43D8204A8A8BB3F77D250C83 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HandsAppTests/Pods-HandsAppTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		47767C01D45015A0336643E6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-HandsApp/Pods-HandsApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/UIScrollView-InfiniteScroll/UIScrollView_InfiniteScroll.framework",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UIScrollView_InfiniteScroll.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HandsApp/Pods-HandsApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5839F67177BEB9B09329364F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HandsAppTests/Pods-HandsAppTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		83E4345D8777B2D642EB184E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-HandsFrameworkTests/Pods-HandsFrameworkTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HandsFrameworkTests/Pods-HandsFrameworkTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		96123A4DE9636C5766084B01 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HandsAppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		969D3517377305CE799DBF91 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HandsAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B0C027F398493B4EB5D5DA86 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HandsFramework-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D3CD3B33F042254D09A29A12 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HandsFramework/Pods-HandsFramework-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DCE892004315EEE1182C2A2E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HandsAppUITests/Pods-HandsAppUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6D7A62611FDD8CAA00D2AA96 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D59D24B1FE20A9B008118D8 /* UserDataViewModel.swift in Sources */,
+				6D61DC2E1FE3DD9100E7A0D3 /* UserDataDataProviderProtocol.swift in Sources */,
+				6D61DC301FE3DDFA00E7A0D3 /* GenericDataProviderProtocol.swift in Sources */,
+				6D59D2401FE20160008118D8 /* ErrorAlert.swift in Sources */,
+				6D61DC1F1FE3274700E7A0D3 /* UserDataCollectionViewCell.swift in Sources */,
+				6D02F0BF1FE4CDDE00AC663D /* UserDataDetailViewController+UserDataDataDetailProviderProtocol.swift in Sources */,
+				6D61DC141FE31B9200E7A0D3 /* Extensions.swift in Sources */,
+				6D02F0C31FE4D2FB00AC663D /* LocationDataProviderProtocol.swift in Sources */,
+				6D61DC121FE3180000E7A0D3 /* UserDataDataProvider.swift in Sources */,
+				6D02F0C71FE5628A00AC663D /* MapsViewController.swift in Sources */,
+				6D02F0C11FE4D2BB00AC663D /* LocationDataProvider.swift in Sources */,
+				6D61DC181FE31E2900E7A0D3 /* UserDataViewController.swift in Sources */,
+				6D61DC2C1FE3DCCE00E7A0D3 /* ErrorHandleableProtocol.swift in Sources */,
+				6D61DC231FE34FEC00E7A0D3 /* UserDataViewController+UICollectionViewDataSource.swift in Sources */,
+				6D61DC191FE31E2900E7A0D3 /* BaseViewController.swift in Sources */,
+				6D61DC271FE3642400E7A0D3 /* UserDataDetailViewController.swift in Sources */,
+				6D59D2331FE1FFF4008118D8 /* AppDelegate.swift in Sources */,
+				6D59D2461FE2090E008118D8 /* DataProviderManager.swift in Sources */,
+				6D61DC1B1FE31E9200E7A0D3 /* UserDataViewController+UserDataDataProviderProtocol.swift in Sources */,
+				6D61DC291FE36C4E00E7A0D3 /* UserDataDetailViewModel.swift in Sources */,
+				6D61DC251FE3501200E7A0D3 /* UserDataViewController+UICollectionViewDelegateFlowLayout.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D7A62741FDD8CAA00D2AA96 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D7A627D1FDD8CAA00D2AA96 /* HandsAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D7A627F1FDD8CAA00D2AA96 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D7A62881FDD8CAA00D2AA96 /* HandsAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D7A62931FDD8CE900D2AA96 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D59D2241FE1EFB7008118D8 /* AddressModel.m in Sources */,
+				6D995A571FE09B8000BAFE81 /* AddressComponent.m in Sources */,
+				6D995A4E1FE097E400BAFE81 /* UserDataRequest.m in Sources */,
+				6DDF7B921FE1DA210089D1A5 /* Result.m in Sources */,
+				6D995A5B1FE0A64900BAFE81 /* Address.m in Sources */,
+				6DE678E81FDFEEDD00A0C421 /* LocationManager.m in Sources */,
+				6DED8A7B1FDD990400BA7636 /* UserData.m in Sources */,
+				6D995A4B1FE097C400BAFE81 /* AddressRequest.m in Sources */,
+				6DDF7B9C1FE1E6390089D1A5 /* UserDataModel.m in Sources */,
+				6DE678DD1FDF38EC00A0C421 /* Client.m in Sources */,
+				6D59D2281FE1F159008118D8 /* LocationModel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D7A629C1FDD8CE900D2AA96 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D7A62A81FDD8CE900D2AA96 /* HandsFrameworkTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6D06637C1FE02F3A0009B8BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6D7A62971FDD8CE900D2AA96 /* HandsFramework */;
+			targetProxy = 6D06637B1FE02F3A0009B8BC /* PBXContainerItemProxy */;
+		};
+		6D7A627A1FDD8CAA00D2AA96 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6D7A62641FDD8CAA00D2AA96 /* HandsApp */;
+			targetProxy = 6D7A62791FDD8CAA00D2AA96 /* PBXContainerItemProxy */;
+		};
+		6D7A62851FDD8CAA00D2AA96 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6D7A62641FDD8CAA00D2AA96 /* HandsApp */;
+			targetProxy = 6D7A62841FDD8CAA00D2AA96 /* PBXContainerItemProxy */;
+		};
+		6D7A62A31FDD8CE900D2AA96 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6D7A62971FDD8CE900D2AA96 /* HandsFramework */;
+			targetProxy = 6D7A62A21FDD8CE900D2AA96 /* PBXContainerItemProxy */;
+		};
+		6D7A62A51FDD8CE900D2AA96 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6D7A62641FDD8CAA00D2AA96 /* HandsApp */;
+			targetProxy = 6D7A62A41FDD8CE900D2AA96 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6D7A626B1FDD8CAA00D2AA96 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6D7A626C1FDD8CAA00D2AA96 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6D7A62701FDD8CAA00D2AA96 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6D7A62711FDD8CAA00D2AA96 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6D7A625C1FDD8C4E00D2AA96 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/$(PROJECT_NAME)/HandsApp-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_REFLECTION_METADATA_LEVEL = all;
+			};
+			name = Debug;
+		};
+		6D7A625D1FDD8C4E00D2AA96 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/$(PROJECT_NAME)/HandsApp-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_REFLECTION_METADATA_LEVEL = all;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6D7A628B1FDD8CAA00D2AA96 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6625440496D4A95543246B0 /* Pods-HandsApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PJ49JZS9BX;
+				INFOPLIST_FILE = "$(SRCROOT)/HandsApp/SupportFiles/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.robson.HandsApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/$(TARGET_NAME)/SupportFiles/$(TARGET_NAME)-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		6D7A628C1FDD8CAA00D2AA96 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1B36277093611F6D1F3497C /* Pods-HandsApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PJ49JZS9BX;
+				INFOPLIST_FILE = "$(SRCROOT)/HandsApp/SupportFiles/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.robson.HandsApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/$(TARGET_NAME)/SupportFiles/$(TARGET_NAME)-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		6D7A628E1FDD8CAA00D2AA96 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D3DEA73ECE494F216B37FDA /* Pods-HandsAppTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SC9STAPP9T;
+				INFOPLIST_FILE = HandsAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.robson.HandsAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HandsApp.app/HandsApp";
+			};
+			name = Debug;
+		};
+		6D7A628F1FDD8CAA00D2AA96 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B2465D24EC896B2AA560F694 /* Pods-HandsAppTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SC9STAPP9T;
+				INFOPLIST_FILE = HandsAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.robson.HandsAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HandsApp.app/HandsApp";
+			};
+			name = Release;
+		};
+		6D7A62911FDD8CAA00D2AA96 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7E1B6A8C81947B42A3CC452 /* Pods-HandsAppUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SC9STAPP9T;
+				INFOPLIST_FILE = HandsAppUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.robson.HandsAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HandsApp;
+			};
+			name = Debug;
+		};
+		6D7A62921FDD8CAA00D2AA96 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C64F11A6112A627C1E4BD1E2 /* Pods-HandsAppUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SC9STAPP9T;
+				INFOPLIST_FILE = HandsAppUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.robson.HandsAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HandsApp;
+			};
+			name = Release;
+		};
+		6D7A62B01FDD8CE900D2AA96 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5BE6292E08847F77A0C4A583 /* Pods-HandsFramework.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = PJ49JZS9BX;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = "$(SRCROOT)/HandsFramework/SupportFiles/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.robson.framework;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6D7A62B11FDD8CE900D2AA96 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57870C591137989FC693B2A4 /* Pods-HandsFramework.release.xcconfig */;
+			buildSettings = {
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = PJ49JZS9BX;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = "$(SRCROOT)/HandsFramework/SupportFiles/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.robson.framework;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6D7A62B41FDD8CE900D2AA96 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 44303D2598F935465585BDF1 /* Pods-HandsFrameworkTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SC9STAPP9T;
+				INFOPLIST_FILE = HandsFrameworkTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.robson.HandsFrameworkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HandsApp.app/HandsApp";
+			};
+			name = Debug;
+		};
+		6D7A62B51FDD8CE900D2AA96 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06B4631CF51AE9CAD8F74A63 /* Pods-HandsFrameworkTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SC9STAPP9T;
+				INFOPLIST_FILE = HandsFrameworkTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.robson.HandsFrameworkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HandsApp.app/HandsApp";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6D7A62471FDD8C4E00D2AA96 /* Build configuration list for PBXProject "HandsAppFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D7A625C1FDD8C4E00D2AA96 /* Debug */,
+				6D7A625D1FDD8C4E00D2AA96 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6D7A628A1FDD8CAA00D2AA96 /* Build configuration list for PBXNativeTarget "HandsApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D7A628B1FDD8CAA00D2AA96 /* Debug */,
+				6D7A628C1FDD8CAA00D2AA96 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6D7A628D1FDD8CAA00D2AA96 /* Build configuration list for PBXNativeTarget "HandsAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D7A628E1FDD8CAA00D2AA96 /* Debug */,
+				6D7A628F1FDD8CAA00D2AA96 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6D7A62901FDD8CAA00D2AA96 /* Build configuration list for PBXNativeTarget "HandsAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D7A62911FDD8CAA00D2AA96 /* Debug */,
+				6D7A62921FDD8CAA00D2AA96 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6D7A62AF1FDD8CE900D2AA96 /* Build configuration list for PBXNativeTarget "HandsFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D7A62B01FDD8CE900D2AA96 /* Debug */,
+				6D7A62B11FDD8CE900D2AA96 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6D7A62B31FDD8CE900D2AA96 /* Build configuration list for PBXNativeTarget "HandsFrameworkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D7A62B41FDD8CE900D2AA96 /* Debug */,
+				6D7A62B51FDD8CE900D2AA96 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6D7A62441FDD8C4E00D2AA96 /* Project object */;
+}

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="UserDataCollectionViewCell" id="gTV-IL-0wX" customClass="UserDataCollectionViewCell" customModule="HandsApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="116"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="116"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Motorola Moto X (2nd Gen)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mNP-QY-JPB">
+                        <rect key="frame" x="20" y="13" width="222" height="20"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ca515e36bda92767" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v4z-7L-fE9">
+                        <rect key="frame" x="20" y="32" width="222" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="17" id="Y90-fi-qQh"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6.0.1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Fc-j8-TQG">
+                        <rect key="frame" x="44" y="76" width="46" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="46" id="GgT-vj-cpE"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qpa-r6-zge">
+                        <rect key="frame" x="134" y="77" width="51" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="Kmx-si-1aZ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5J4-iJ-zua">
+                        <rect key="frame" x="0.0" y="115" width="375" height="1"/>
+                        <color key="backgroundColor" red="0.66274509803921566" green="0.66274509803921566" blue="0.66274509803921566" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_apple" translatesAutoresizingMaskIntoConstraints="NO" id="hyo-3K-zmm">
+                        <rect key="frame" x="240" y="13" width="60" height="56"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_phone_version" translatesAutoresizingMaskIntoConstraints="NO" id="Kpb-PI-KeC">
+                        <rect key="frame" x="20" y="73" width="24" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="24" id="iyt-YI-1Te"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_battery_chargin_100" translatesAutoresizingMaskIntoConstraints="NO" id="4Ji-cO-B44">
+                        <rect key="frame" x="110" y="73" width="24" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="24" id="Dbg-rC-LbP"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Android" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LWb-gr-nYL">
+                        <rect key="frame" x="233" y="76" width="75" height="20"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                        <color key="textColor" red="1" green="0.3411764706" blue="0.1333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="5J4-iJ-zua" secondAttribute="bottom" id="26Q-JI-PC5"/>
+                <constraint firstItem="hyo-3K-zmm" firstAttribute="centerX" secondItem="LWb-gr-nYL" secondAttribute="centerX" id="2Wi-VN-Zui"/>
+                <constraint firstItem="Qpa-r6-zge" firstAttribute="leading" secondItem="4Ji-cO-B44" secondAttribute="trailing" id="43P-GE-u4d"/>
+                <constraint firstItem="v4z-7L-fE9" firstAttribute="leading" secondItem="Kpb-PI-KeC" secondAttribute="leading" id="6rY-RA-Olw"/>
+                <constraint firstItem="Kpb-PI-KeC" firstAttribute="top" secondItem="v4z-7L-fE9" secondAttribute="bottom" constant="24" id="7ge-WX-FuW"/>
+                <constraint firstItem="5J4-iJ-zua" firstAttribute="top" secondItem="LWb-gr-nYL" secondAttribute="bottom" constant="19" id="8u6-IK-B1y"/>
+                <constraint firstItem="Kpb-PI-KeC" firstAttribute="top" secondItem="4Ji-cO-B44" secondAttribute="top" id="AEf-a5-a70"/>
+                <constraint firstAttribute="trailing" secondItem="mNP-QY-JPB" secondAttribute="trailing" constant="78" id="FbN-Y4-dsS"/>
+                <constraint firstItem="2Fc-j8-TQG" firstAttribute="leading" secondItem="Kpb-PI-KeC" secondAttribute="trailing" id="H1T-LZ-fTl"/>
+                <constraint firstAttribute="trailing" secondItem="5J4-iJ-zua" secondAttribute="trailing" constant="-55" id="Jfg-Uq-iMO"/>
+                <constraint firstItem="mNP-QY-JPB" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="NYl-H7-FMA"/>
+                <constraint firstItem="LWb-gr-nYL" firstAttribute="top" secondItem="hyo-3K-zmm" secondAttribute="bottom" constant="7" id="QWG-2W-yD1"/>
+                <constraint firstAttribute="trailing" secondItem="LWb-gr-nYL" secondAttribute="trailing" constant="12" id="Qvl-6y-06Z"/>
+                <constraint firstItem="mNP-QY-JPB" firstAttribute="trailing" secondItem="v4z-7L-fE9" secondAttribute="trailing" id="RjH-DV-gd9"/>
+                <constraint firstItem="2Fc-j8-TQG" firstAttribute="firstBaseline" secondItem="LWb-gr-nYL" secondAttribute="firstBaseline" id="Ss7-PL-gPs"/>
+                <constraint firstItem="4Ji-cO-B44" firstAttribute="leading" secondItem="2Fc-j8-TQG" secondAttribute="trailing" constant="20" id="T9g-Hy-rW5"/>
+                <constraint firstItem="5J4-iJ-zua" firstAttribute="top" secondItem="Qpa-r6-zge" secondAttribute="bottom" constant="18" id="Tjg-Bd-ikK"/>
+                <constraint firstItem="5J4-iJ-zua" firstAttribute="top" secondItem="Kpb-PI-KeC" secondAttribute="bottom" constant="17" id="VG4-51-rHe"/>
+                <constraint firstItem="v4z-7L-fE9" firstAttribute="centerY" secondItem="hyo-3K-zmm" secondAttribute="centerY" id="VdQ-Ny-SMs"/>
+                <constraint firstItem="LWb-gr-nYL" firstAttribute="leading" secondItem="Qpa-r6-zge" secondAttribute="trailing" constant="48" id="aLc-RY-qxg"/>
+                <constraint firstItem="Kpb-PI-KeC" firstAttribute="bottom" secondItem="2Fc-j8-TQG" secondAttribute="bottom" id="cNc-3B-FlT"/>
+                <constraint firstItem="5J4-iJ-zua" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="eCx-HU-hAQ"/>
+                <constraint firstItem="4Ji-cO-B44" firstAttribute="centerY" secondItem="LWb-gr-nYL" secondAttribute="centerY" id="egl-ex-Y8o"/>
+                <constraint firstItem="Qpa-r6-zge" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="eyi-rv-ZPP"/>
+                <constraint firstItem="2Fc-j8-TQG" firstAttribute="bottom" secondItem="4Ji-cO-B44" secondAttribute="bottom" id="fIa-aw-F2Z"/>
+                <constraint firstAttribute="trailing" secondItem="hyo-3K-zmm" secondAttribute="trailing" constant="20" id="hVk-R7-0IV"/>
+                <constraint firstItem="mNP-QY-JPB" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="13" id="p13-1i-rJu"/>
+                <constraint firstItem="mNP-QY-JPB" firstAttribute="leading" secondItem="v4z-7L-fE9" secondAttribute="leading" id="qOv-if-VQv"/>
+                <constraint firstItem="mNP-QY-JPB" firstAttribute="top" secondItem="hyo-3K-zmm" secondAttribute="top" id="swk-9T-Z4D"/>
+                <constraint firstItem="2Fc-j8-TQG" firstAttribute="centerY" secondItem="Qpa-r6-zge" secondAttribute="centerY" id="x4j-XD-jgR"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="403" height="117"/>
+            <connections>
+                <outlet property="imageViewBatteryPercentage" destination="4Ji-cO-B44" id="iXW-46-VXe"/>
+                <outlet property="imageViewOs" destination="hyo-3K-zmm" id="UcD-Pf-QVW"/>
+                <outlet property="labelBatteryPercentage" destination="Qpa-r6-zge" id="xHv-1C-H0v"/>
+                <outlet property="labelDeviceId" destination="v4z-7L-fE9" id="VnP-Sx-llN"/>
+                <outlet property="labelDeviceModel" destination="mNP-QY-JPB" id="kBu-HK-PAu"/>
+                <outlet property="labelOsName" destination="LWb-gr-nYL" id="EGA-Th-Y7t"/>
+                <outlet property="labelOsVersion" destination="2Fc-j8-TQG" id="o03-Na-LHf"/>
+            </connections>
+            <point key="canvasLocation" x="-8" y="93"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="ic_apple" width="58" height="58"/>
+        <image name="ic_battery_chargin_100" width="32" height="32"/>
+        <image name="ic_phone_version" width="32" height="32"/>
+    </resources>
+</document>
